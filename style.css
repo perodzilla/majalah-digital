@@ -3,20 +3,28 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color:white;
+    background-color:black;
+    color: white;
 }
 
 .head {
-   background: white;
+   background-image: url('banner.jpg');
+   background-position: cover;
+   background-repeat: no-repeat;
+   background-position: top;
+   background-size: 200%;
+   height: 70vh;
+   width: 100vw;
+   display: flex;
 }
 
 .headh1 {
-    color: #411413;
+    color: yellow;
     padding: 10px 0;
     text-align: center;
-    font-family: cursive;
-    font-size: 45px;
-    text-shadow: -1px 1px 0px #fbe7c4, -4px 2px 0px #fb9c25;
+    font-family: arial;
+    font-size: 10vh;
+    xtext-shadow: -1px 1px 0px #fbe7c4, -4px 2px 0px #fb9c25;
 }
 
 header nav ul {
@@ -30,7 +38,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -40,11 +48,20 @@ section {
 }
 
 .magazine-page {
-    display: flex;
+    display: inline;
     margin-bottom: 20px;
+}
+.magazine-page1 {
+    display: inline;
+    margin-bottom: 0px;
 }
 
 .magazine-page img {
+    width: 100%;
+    height: 10%;
+    margin-right: 20px;
+}
+.magazine-page1 img {
     width: 100%;
     height: 10%;
     margin-right: 20px;
@@ -58,4 +75,60 @@ footer {
     position: static;
     width: 100%;
     bottom: 0;
+}
+
+.hal1 {
+  /* box-shadow: 0px 0px 10px white; */
+}
+
+.container {
+    display: inline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 21cm; /* Lebar A4 dalam cm */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Mengatur setiap gambar */
+.photo {
+    flex: 0 0 20%; /* Dua gambar dengan jarak 4% di antaranya */
+    margin-bottom: 10px; /* Mengatur margin untuk jarak antara gambar */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */ /* Menambahkan bayangan pada gambar */
+    /* box-shadow: 0px 0px 10px; */
+}
+.photo1 {
+    flex: 0 0 20%; /* Dua gambar dengan jarak 4% di antaranya */
+    margin-bottom: 10px;
+    margin-top: -25px; /* Mengatur margin untuk jarak antara gambar */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */ /* Menambahkan bayangan pada gambar */
+    /* box-shadow: 0px 0px 10px; */
+}
+
+/* Mengatur ukuran gambar agar sesuai dengan kotak foto */
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.photo1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#home {
+  font-size: 2vh;
+}
+
+#about {
+  font-size: 2vh;
+}
+
+#contact {
+  font-size: 2vh;
+}
+
+#foot {
+  font-size: 1vh;
 }
