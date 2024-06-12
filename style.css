@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color:white;
+}
+
+.head {
+   background: white;
+}
+
+.headh1 {
+    color: #411413;
+    padding: 10px 0;
+    text-align: center;
+    font-family: cursive;
+    font-size: 45px;
+    text-shadow: -1px 1px 0px #fbe7c4, -4px 2px 0px #fb9c25;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+.magazine-page {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.magazine-page img {
+    width: 100%;
+    height: 10%;
+    margin-right: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: static;
+    width: 100%;
+    bottom: 0;
+}
