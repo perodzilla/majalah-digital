@@ -3,19 +3,61 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color:black;
+    background-color:#000C18;
     color: white;
 }
 
 .head {
-   background-image: url('/banner.jpg');
+   /* background-image: url('/banner.jpg');
    background-position: cover;
    background-repeat: no-repeat;
    background-position: top;
    background-size: 200%;
    height: 70vh;
    width: 100vw;
-   display: flex;
+   display: flex; */
+}
+
+.headnav {
+    display: grid;
+    place-items: center;
+}
+
+.headul {
+    display: flex;
+    list-style-type: none;
+}
+
+.headli {
+    font-size: 2vh;
+    margin: 0 2vh; /* Menambahkan jarak antar item */
+}
+
+.headli a {
+  color: grey;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block; /* atau gunakan block, flex, grid sesuai kebutuhan layout */
+}
+
+.image {
+    display: absolute;
+    width: 100%;/* sesuaikan ukuran gambar sesuai kebutuhan */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 48%; /* atur posisi vertikal */
+    left: 50%; /* atur posisi horizontal */
+    transform: translate(-50%, -50%); /* mengatur teks di tengah */
+    color: yellow; /* warna teks */
+    font-size: 6vh;
+    font-family: arial;/* ukuran teks */
+    font-weight: bold; /* ketebalan teks */
+    text-align: center; /* perataan teks */
+    z-index: 1; /* pastikan teks di atas gambar */
 }
 
 .headh1 {
